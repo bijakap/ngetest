@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: #34495e;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*nav*/
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .3rem;
+  background: rgba(0, 0, 10, 0.6)!important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-brand {
+  height: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar-nav li {
+  padding-right: .7rem
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: .8rem; 
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #f9ca24;
+}
+
+/*awalan*/
+
+.home-inner {
+  background-image: url(./img/back1.jpg); 
+}
+
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top : 38%;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+}
+
+.caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem; 
+}
+
+.caption h3 {
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.6rem;
+}
+
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.3rem; 
+  font-size: 1.1rem;
+}
+
+footer {
+  background-color: #222f3e;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+hr.socket {
+  width: 100%;
+  border-top: .2rem solid #666b71;
+  margin-top: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
